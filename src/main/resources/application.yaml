@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/rshop
+    username: rshopecom
+    password: passguess
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#  No serializer found for class org.hibernate.proxy.pojo...
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
